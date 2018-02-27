@@ -1,0 +1,29 @@
+<!--tutaj podawanie query-->
+<!--add show SignUps -> showResults-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search Engine</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Search Engine</h1>
+        <form action="{{ url_for('showResults') }}" method="post" class="form-query">
+        <label for="inputQuery" class="sr-only">Query Value</label>
+        <input type="text" name="inputQuery" id="inputQuery" class="form-control" placeholder="Write your query" required autofocus>
+        <input class="btn btn-lg btn-primary btn-block" type = "submit">
+        </form>
+      </div>
+
+    </div>
+  </body>
+</html>
